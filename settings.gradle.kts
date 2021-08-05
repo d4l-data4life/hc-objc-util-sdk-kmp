@@ -26,7 +26,9 @@ plugins {
 
 rootProject.name = "hc-objc-util-kmp"
 
-include()
+include(
+    ":objc-util"
+)
 
 buildCache {
     local {
