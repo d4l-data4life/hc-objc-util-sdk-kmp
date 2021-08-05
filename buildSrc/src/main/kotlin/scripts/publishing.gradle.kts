@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.hl7.fhir
+package scripts
 
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.api.ResetCommand
