@@ -19,7 +19,6 @@ local.properties
 !.idea/compiler.xml
 
 # generated
-util-test/src-gen/commonTest/kotlin/care/data4life/sdk/util/test/config/TestConfig.kt
 
 # Others
 captures/
