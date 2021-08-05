@@ -16,10 +16,10 @@
 
 object LibraryConfig {
     const val group = "care.data4life"
-    const val name = "hc-objc-util-kmp"
+    const val name = "hc-objc-util-sdk-kmp"
 
     const val githubOwner = "d4l-data4life"
-    const val githubRepository = "hc-objc-util-kmp"
+    const val githubRepository = "hc-objc-util-sdk-kmp"
 
     val publish = PublishConfig
 
@@ -59,6 +59,6 @@ object LibraryConfig {
         const val compileSdkVersion = 30
         const val targetSdkVersion = 30
 
-        const val resourcePrefix = "hc_objc_util_"
+        const val resourcePrefix = "hc_objc_util_sdk_"
     }
 }

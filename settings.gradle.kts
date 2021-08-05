@@ -24,7 +24,7 @@ plugins {
     id("com.gradle.enterprise") version("3.4.1")
 }
 
-rootProject.name = "hc-objc-util-kmp"
+rootProject.name = "hc-objc-util-sdk-kmp"
 
 include(
     ":objc-util"
