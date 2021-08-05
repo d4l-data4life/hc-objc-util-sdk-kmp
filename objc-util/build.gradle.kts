@@ -24,13 +24,7 @@ plugins {
 group = LibraryConfig.group
 
 kotlin {
-    ios {
-        binaries {
-            framework {
-                baseName = LibraryConfig.name
-            }
-        }
-    }
+    ios {}
 
     sourceSets {
         val iosMain by getting {
