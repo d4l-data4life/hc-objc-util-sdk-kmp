@@ -13,11 +13,12 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
+package care.data4life.sdk.util.objc.dependency
 
-object Versions {
+object Version {
 
     object GradlePlugins {
-        const val kotlin = Versions.kotlin
+        const val kotlin = Version.kotlin
         const val android = "4.2.2"
     }
 

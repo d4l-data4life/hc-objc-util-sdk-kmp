@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package scripts
+package care.data4life.sdk.util.objc
 
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.api.ResetCommand
@@ -109,65 +109,65 @@ task<Exec>("publishRelease") {
 }
 
 // Git Checkout
-val gitPublishFeatureCheckout: Task by tasks.creating() {
+val gitPublishFeatureCheckout: Task by tasks.creating {
     group = taskGroup
     doLast { gitClone(featureRepoName) }
 }
 
-val gitPublishSnapshotCheckout: Task by tasks.creating() {
+val gitPublishSnapshotCheckout: Task by tasks.creating {
     group = taskGroup
     doLast { gitClone(snapshotRepoName) }
 }
 
-val gitPublishReleaseCheckout: Task by tasks.creating() {
+val gitPublishReleaseCheckout: Task by tasks.creating {
     group = taskGroup
     doLast { gitClone(releaseRepoName) }
 }
 
 // Git Update
-val gitPublishFeatureUpdate: Task by tasks.creating() {
+val gitPublishFeatureUpdate: Task by tasks.creating {
     group = taskGroup
     doLast { gitUpdate(featureRepoName) }
 }
 
-val gitPublishSnapshotUpdate: Task by tasks.creating() {
+val gitPublishSnapshotUpdate: Task by tasks.creating {
     group = taskGroup
     doLast { gitUpdate(snapshotRepoName) }
 }
 
-val gitPublishReleaseUpdate: Task by tasks.creating() {
+val gitPublishReleaseUpdate: Task by tasks.creating {
     group = taskGroup
     doLast { gitUpdate(releaseRepoName) }
 }
 
 // Git Commit
-val gitPublishFeatureCommit: Task by tasks.creating() {
+val gitPublishFeatureCommit: Task by tasks.creating {
     group = taskGroup
     doLast { gitCommit(featureRepoName) }
 }
 
-val gitPublishSnapshotCommit: Task by tasks.creating() {
+val gitPublishSnapshotCommit: Task by tasks.creating {
     group = taskGroup
     doLast { gitCommit(snapshotRepoName) }
 }
 
-val gitPublishReleaseCommit: Task by tasks.creating() {
+val gitPublishReleaseCommit: Task by tasks.creating {
     group = taskGroup
     doLast { gitCommit(releaseRepoName) }
 }
 
 // Git Push
-val gitPublishFeaturePush: Task by tasks.creating() {
+val gitPublishFeaturePush: Task by tasks.creating {
     group = taskGroup
     doLast { gitPush(featureRepoName) }
 }
 
-val gitPublishSnapshotPush: Task by tasks.creating() {
+val gitPublishSnapshotPush: Task by tasks.creating {
     group = taskGroup
     doLast { gitPush(snapshotRepoName) }
 }
 
-val gitPublishReleasePush: Task by tasks.creating() {
+val gitPublishReleasePush: Task by tasks.creating {
     group = taskGroup
     doLast { gitPush(releaseRepoName) }
 }

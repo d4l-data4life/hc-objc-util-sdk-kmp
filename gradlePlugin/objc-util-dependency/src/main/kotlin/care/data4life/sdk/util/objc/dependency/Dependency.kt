@@ -14,32 +14,34 @@
  * contact D4L by email to help@data4life.care.
  */
 
-object Dependencies {
+package care.data4life.sdk.util.objc.dependency
+
+object Dependency {
     val multiplatform = Multiplatform
     object Multiplatform {
 
         val kotlin = Kotlin
         object Kotlin {
-            const val stdlibCommon = "org.jetbrains.kotlin:kotlin-stdlib-common:${Versions.kotlin}"
-            const val stdlibNative = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+            const val stdlibCommon = "org.jetbrains.kotlin:kotlin-stdlib-common:${Version.kotlin}"
+            const val stdlibNative = "org.jetbrains.kotlin:kotlin-stdlib:${Version.kotlin}"
 
-            const val testCommon = "org.jetbrains.kotlin:kotlin-test-common:${Versions.kotlin}"
-            const val testCommonAnnotations = "org.jetbrains.kotlin:kotlin-test-annotations-common:${Versions.kotlin}"
+            const val testCommon = "org.jetbrains.kotlin:kotlin-test-common:${Version.kotlin}"
+            const val testCommonAnnotations = "org.jetbrains.kotlin:kotlin-test-annotations-common:${Version.kotlin}"
         }
 
         val coroutines = Coroutines
 
         object Coroutines {
             // https://github.com/Kotlin/kotlinx.coroutines
-            const val common = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinCoroutines}"
-            const val stately = "co.touchlab:stately-common:${Versions.stately}"
+            const val common = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.kotlinCoroutines}"
+            const val stately = "co.touchlab:stately-common:${Version.stately}"
         }
 
         val ktor = Ktor
 
         object Ktor {
-            const val common = "io.ktor:ktor-client-core:${Versions.ktor}"
-            const val mock = "io.ktor:ktor-client-mock:${Versions.ktor}"
+            const val common = "io.ktor:ktor-client-core:${Version.ktor}"
+            const val mock = "io.ktor:ktor-client-mock:${Version.ktor}"
         }
     }
 }

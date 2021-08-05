@@ -14,17 +14,17 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package scripts
+package care.data4life.sdk.util.objc
 
 import org.gradle.api.publish.maven.MavenPublication
 
 /**
  * Install:
  *
- * Just add id("care.data4life.fhir.publishing-config") to your project module build.gradle.kts plugins section
+ * Just add id("care.data4life.sdk.util.objc.publishing-config") to your project module build.gradle.kts plugins section
  *
  * plugins {
- *     id("care.data4life.fhir.publishing-config")
+ *     id("care.data4life.sdk.util.objc.publishing-config")
  * }
  *
  * Usage:
@@ -34,7 +34,7 @@ import org.gradle.api.publish.maven.MavenPublication
  * - ./gradlew publishSnapshot
  * - ./gradlew publishRelease
  *
- * This requires a care.data4life.hl7.fhir.LibraryConfig configured
+ * This requires a care.data4life.LibraryConfig configured
  */
 plugins {
     `maven-publish`
