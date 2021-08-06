@@ -20,13 +20,13 @@ object LibraryConfig {
     val publishConfig = PublishConfig
 
     const val group = "care.data4life"
-    const val name = "hc-objc-util-kmp"
+    const val name = "hc-objc-util-sdk-kmp"
 
     const val githubOwner = "d4l-data4life"
-    const val githubRepository = "hc-objc-util-kmp"
+    const val githubRepository = "hc-objc-util-sdk-kmp"
 
     object PublishConfig {
-        const val groupId = "care.data4life.hc-objc-util-kmp"
+        const val groupId = "care.data4life.hc-objc-util-sdk-kmp"
         const val description = "This is the Objective-C Util SDK which provides bridging code for Objective-C to Kotlin."
 
         const val year = "2021"

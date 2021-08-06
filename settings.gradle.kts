@@ -38,4 +38,4 @@ buildCache {
     }
 }
 
-rootProject.name = "hc-objc-util-kmp"
+rootProject.name = "hc-objc-util-sdk-kmp"
