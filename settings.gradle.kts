@@ -18,13 +18,13 @@ pluginManagement {
         gradlePluginPortal()
         google()
     }
+
+    includeBuild("gradlePlugin/objc-util-dependency")
 }
 
 plugins {
     id("com.gradle.enterprise") version("3.4.1")
 }
-
-rootProject.name = "hc-objc-util-sdk-kmp"
 
 include(
     ":objc-util"
@@ -37,3 +37,5 @@ buildCache {
         removeUnusedEntriesAfterDays = 30
     }
 }
+
+rootProject.name = "hc-objc-util-sdk-kmp"

@@ -13,24 +13,23 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
+
 plugins {
-    id("care.data4life.sdk.util.objc.dependency")
-
-    id("care.data4life.sdk.util.objc.dependency-updates")
-    id("care.data4life.sdk.util.objc.download-scripts")
-    id("care.data4life.sdk.util.objc.publishing")
-    id("care.data4life.sdk.util.objc.quality-spotless")
-    id("care.data4life.sdk.util.objc.versioning")
+    `kotlin-dsl`
+    `java-gradle-plugin`
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+// To make it available as direct dependency
+group = "care.data4life.sdk.util.objc.dependency"
+version = "1.0.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+gradlePlugin {
+    plugins.register("care.data4life.sdk.util.objc.dependency") {
+        id = "care.data4life.sdk.util.objc.dependency"
+        implementationClass = "care.data4life.sdk.util.objc.dependency.DependencyPlugin"
     }
-}
-
-tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "6.9"
-    distributionType = Wrapper.DistributionType.ALL
 }
