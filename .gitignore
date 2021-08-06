@@ -7,6 +7,7 @@ local.properties
 # IDEA/Android Studio ignores
 *iml
 .idea/*
+.idea/compiler.xml
 
 # IDEA/Android Studio includes
 !.idea/vcs.xml
@@ -16,7 +17,7 @@ local.properties
 !.idea/codeStyles/
 !.idea/encoding.xml
 !.idea/copyright/
-!.idea/compiler.xml
+
 
 # generated
 
