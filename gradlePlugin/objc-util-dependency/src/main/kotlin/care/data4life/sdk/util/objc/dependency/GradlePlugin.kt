@@ -16,6 +16,6 @@
 package care.data4life.sdk.util.objc.dependency
 
 object GradlePlugin {
-    const val android = "com.android.tools.build:gradle:${Version.GradlePlugins.android}"
-    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.GradlePlugins.kotlin}"
+    const val android = "com.android.tools.build:gradle:${Version.GradlePlugin.android}"
+    const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.GradlePlugin.kotlin}"
 }

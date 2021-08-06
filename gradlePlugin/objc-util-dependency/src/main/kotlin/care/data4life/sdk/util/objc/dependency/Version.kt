@@ -17,7 +17,7 @@ package care.data4life.sdk.util.objc.dependency
 
 object Version {
 
-    object GradlePlugins {
+    object GradlePlugin {
         const val kotlin = Version.kotlin
         const val android = "4.2.2"
     }
