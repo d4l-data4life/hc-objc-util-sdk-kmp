@@ -1,4 +1,4 @@
-= Data4Life Util SDK
+= Data4Life Obj-C Util SDK
 :objc-util-sdk-version: 0.1.0
 :doctype: article
 :!showtitle:
@@ -62,8 +62,7 @@ This is the Objective-C Util SDK which provides bridging code for Objective-C to
 
 === Features
 
-==== util
-* NSDataMapper
+==== Obj-C Util
 * NSErrorFactory
 
 === Built With
@@ -74,7 +73,7 @@ This is the Objective-C Util SDK which provides bridging code for Objective-C to
 
 === Requirements
 
-* link:https://adoptopenjdk.net/[Java 8] | link:https://developer.android.com/studio/write/java8-support[Limitations of Java language features and APIs] | https://jakewharton.com/d8-library-desugaring/[Desugaring]
+* link:https://adoptopenjdk.net/[Java 11]
 * link:https://kotlinlang.org/[Kotlin 1.4.32]
 * Android 6.0 (API 23) to Android 11.0 (API 30)
 

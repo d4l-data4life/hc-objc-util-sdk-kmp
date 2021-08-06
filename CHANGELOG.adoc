@@ -2,6 +2,7 @@
 :toc: macro
 :toclevels: 1
 :toc-title:
+:link-repository: https://github.com/d4l-data4life/hc-objc-util-sdk-kmp
 
 All notable changes to this project will be documented in this file.
 
@@ -12,22 +13,30 @@ and this project adheres to http://semver.org/spec/v2.0.0.html[Semantic Versioni
 ==== Versions
 toc::[]
 
-== https://github.com/d4l-data4life/hc-objc-util-sdk-kmp/compare/0.1.0...main[Unreleased]
+== link:{link-repository}/releases/latest[Unreleased]
+See link:{link-repository}/compare/v0.1.0...main[changeset]
 
 === Added
 
-* NSErrorFactory
-
 === Changed
+
+=== Deprecated
 
 === Removed
 
 === Fixed
 
+=== Security
+
 === Bumped
 
 === Migration
 
-== https://github.com/d4l-data4life/hc-objc-util-sdk-kmp/compare/v0.1.0[0.1.0]
 
-Initial release taken to be open sourced.
+== link:{link-repository}/releases/tag/v0.1.0[0.1.0]
+
+=== Added
+
+Initial release.
+
+* NSErrorFactory
