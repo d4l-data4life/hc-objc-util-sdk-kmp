@@ -13,12 +13,15 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
+import care.data4life.sdk.util.objc.LibraryConfig
+import care.data4life.sdk.util.objc.dependency.Dependency
+
 
 plugins {
-    kotlinMultiplatform()
+    id("org.jetbrains.kotlin.multiplatform")
 
     // Publish
-    id("scripts.publishing-config")
+    id("care.data4life.sdk.util.objc.publishing-config")
 }
 
 group = LibraryConfig.group
@@ -29,16 +32,16 @@ kotlin {
     sourceSets {
         val iosMain by getting {
             dependencies {
-                implementation(Dependencies.multiplatform.kotlin.stdlibNative)
-                implementation(Dependencies.multiplatform.coroutines.stately)  // TODO: Remove with Kotlin 1.5.x
+                implementation(Dependency.multiplatform.kotlin.stdlibNative)
+                implementation(Dependency.multiplatform.coroutines.stately)  // TODO: Remove with Kotlin 1.5.x
             }
         }
 
         val iosTest by getting {
             dependencies {
                 dependencies {
-                    implementation(Dependencies.multiplatform.kotlin.testCommon)
-                    implementation(Dependencies.multiplatform.kotlin.testCommonAnnotations)
+                    implementation(Dependency.multiplatform.kotlin.testCommon)
+                    implementation(Dependency.multiplatform.kotlin.testCommonAnnotations)
                 }
             }
         }
