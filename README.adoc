@@ -107,7 +107,7 @@ gpr.user=github-username
 gpr.key=github-token
 ----
 
-=== util
+=== objc-util
 
 Add following dependencies to your app build.gradle.
 
