@@ -39,10 +39,10 @@ import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider
  *     mavenCentral()
  * }
  *
- * Now just add id("care.data4life.fhir.publishing") to your rootProject build.gradle.kts plugins
+ * Now just add id("care.data4life.sdk.util.objc.publishing") to your rootProject build.gradle.kts plugins
  *
  * plugins {
- *     id("care.data4life.fhir.publishing")
+ *     id("care.data4life.sdk.util.objc.publishing")
  * }
  *
  * Usage:
