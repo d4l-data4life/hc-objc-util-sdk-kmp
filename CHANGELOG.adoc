@@ -40,3 +40,4 @@ See link:{link-repository}/compare/v0.1.0...main[changeset]
 Initial release.
 
 * NSErrorFactory
+* NSDataMapper

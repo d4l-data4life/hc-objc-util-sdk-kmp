@@ -64,6 +64,7 @@ This is the Objective-C Util SDK which provides bridging code for Objective-C to
 
 ==== Obj-C Util
 * NSErrorFactory
+* NSDataMapper
 
 === Built With
 
