@@ -1,5 +1,5 @@
 = Data4Life Util SDK
-:util-sdk-version: 1.9.0
+:objc-util-sdk-version: 0.1.0
 :doctype: article
 :!showtitle:
 :toc: macro
@@ -113,7 +113,7 @@ Add following dependencies to your app build.gradle.
 
 ----
 dependencies {
-    implementation "care.data4life.hc-objc-util-sdk-kmp:util:$version"
+    implementation "care.data4life.hc-objc-util-sdk-kmp:objc-util:$version"
 }
 ----
 
