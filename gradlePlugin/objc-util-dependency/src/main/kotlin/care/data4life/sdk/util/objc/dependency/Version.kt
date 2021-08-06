@@ -13,24 +13,26 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
-plugins {
-    id("care.data4life.sdk.util.objc.dependency")
+package care.data4life.sdk.util.objc.dependency
 
-    id("care.data4life.sdk.util.objc.dependency-updates")
-    id("care.data4life.sdk.util.objc.download-scripts")
-    id("care.data4life.sdk.util.objc.publishing")
-    id("care.data4life.sdk.util.objc.quality-spotless")
-    id("care.data4life.sdk.util.objc.versioning")
-}
+object Version {
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
+    object GradlePlugin {
+        const val kotlin = Version.kotlin
+        const val android = "4.2.2"
     }
-}
 
-tasks.named<Wrapper>("wrapper") {
-    gradleVersion = "6.9"
-    distributionType = Wrapper.DistributionType.ALL
+    // Kotlin
+    // https://github.com/JetBrains/kotlin
+    const val kotlin = "1.4.32"
+
+    // https://github.com/Kotlin/kotlinx.coroutines
+    const val kotlinCoroutines = "1.4.3-native-mt"
+
+    // https://github.com/touchlab/Stately
+    const val stately = "1.1.6"
+
+    // Network
+    // https://ktor.io/
+    const val ktor = "1.5.4"
 }
