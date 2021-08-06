@@ -18,7 +18,7 @@ curl link -s -o filename
 Version image:{link-badge-release}[Latest release]::
 `curl {link-badge-release} -s -o badge-release-latest.svg`
 
-:link-badge-platform: https://img.shields.io/badge/Platform-Android%20•%20JVM%20•%20iOS%20-blue.svg
+:link-badge-platform: https://img.shields.io/badge/Platform-iOS%20-blue.svg
 Platform image:{link-badge-platform}[Platform]::
 `curl {link-badge-platform} -s -o badge-platform-support.svg`
 
