@@ -17,13 +17,13 @@
 package care.data4life.sdk.util.objc
 
 object LibraryConfig {
+    val publishConfig = PublishConfig
+
     const val group = "care.data4life"
     const val name = "hc-objc-util-kmp"
 
     const val githubOwner = "d4l-data4life"
     const val githubRepository = "hc-objc-util-kmp"
-
-    val publish = PublishConfig
 
     object PublishConfig {
         const val groupId = "care.data4life.hc-objc-util-kmp"
