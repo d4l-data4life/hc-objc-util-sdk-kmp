@@ -13,26 +13,26 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
+package care.data4life.gradle.util.objc.dependency
 
-package care.data4life.sdk.util.objc
+object Version {
 
-import co.touchlab.stately.freeze
-import platform.Foundation.NSError
-import platform.Foundation.NSErrorUserInfoKey
-import platform.Foundation.NSLocalizedDescriptionKey
-
-object NSErrorFactory {
-    fun create(
-        code: Long,
-        domain: String,
-        localizedDescription: String,
-        kotlinError: Throwable
-    ): NSError {
-        val userInfo = mapOf<Any?, Any>(
-            NSLocalizedDescriptionKey to localizedDescription,
-            "kotlinError" as NSErrorUserInfoKey to kotlinError.freeze()
-        )
-
-        return NSError.errorWithDomain(domain, code, userInfo)
+    object GradlePlugin {
+        const val kotlin = Version.kotlin
+        const val android = "4.2.2"
     }
+
+    // Kotlin
+    // https://github.com/JetBrains/kotlin
+    const val kotlin = "1.4.32"
+
+    // https://github.com/Kotlin/kotlinx.coroutines
+    const val kotlinCoroutines = "1.4.3-native-mt"
+
+    // https://github.com/touchlab/Stately
+    const val stately = "1.1.6"
+
+    // Network
+    // https://ktor.io/
+    const val ktor = "1.5.4"
 }

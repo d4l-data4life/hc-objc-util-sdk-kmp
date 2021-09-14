@@ -14,7 +14,7 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.util.objc.dependency
+package care.data4life.gradle.util.objc.dependency
 
 object Dependency {
     val multiplatform = Multiplatform

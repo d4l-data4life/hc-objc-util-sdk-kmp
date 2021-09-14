@@ -14,20 +14,23 @@
  * contact D4L by email to help@data4life.care.
  */
 
+import care.data4life.gradle.util.objc.dependency.d4l
+
 plugins {
     `kotlin-dsl`
-    id("care.data4life.sdk.util.objc.dependency")
+    id("care.data4life.gradle.util.objc.dependency")
 }
 
 repositories {
     gradlePluginPortal()
     mavenCentral()
     google()
+    d4l()
 }
 
 dependencies {
-    implementation(care.data4life.sdk.util.objc.dependency.GradlePlugin.kotlin)
-    implementation(care.data4life.sdk.util.objc.dependency.GradlePlugin.android)
+    implementation(care.data4life.gradle.util.objc.dependency.GradlePlugin.kotlin)
+    implementation(care.data4life.gradle.util.objc.dependency.GradlePlugin.android)
 
     // dependency-updates
     implementation("com.github.ben-manes:gradle-versions-plugin:0.38.0")
@@ -38,8 +41,8 @@ dependencies {
     // quality
     implementation("com.diffplug.spotless:spotless-plugin-gradle:5.10.2")
     implementation("com.pinterest:ktlint:0.41.0")
-    // versioning
-    implementation("com.palantir.gradle.gitversion:gradle-git-version:0.12.3")
+    // versioning.gradle.kts
+    implementation("care.data4life.gradle.gitversion:gradle-git-version:0.12.4-d4l")
 }
 
 kotlinDslPluginOptions {

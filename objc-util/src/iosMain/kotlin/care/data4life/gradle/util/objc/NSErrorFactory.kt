@@ -14,14 +14,25 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.sdk.util.objc.dependency
+package care.data4life.gradle.util.objc
 
-import org.gradle.api.Plugin
-import org.gradle.api.Project
+import co.touchlab.stately.freeze
+import platform.Foundation.NSError
+import platform.Foundation.NSErrorUserInfoKey
+import platform.Foundation.NSLocalizedDescriptionKey
 
-class DependencyPlugin : Plugin<Project> {
+object NSErrorFactory {
+    fun create(
+        code: Long,
+        domain: String,
+        localizedDescription: String,
+        kotlinError: Throwable
+    ): NSError {
+        val userInfo = mapOf<Any?, Any>(
+            NSLocalizedDescriptionKey to localizedDescription,
+            "kotlinError" as NSErrorUserInfoKey to kotlinError.freeze()
+        )
 
-    override fun apply(target: Project) {
-        // nothing to do
+        return NSError.errorWithDomain(domain, code, userInfo)
     }
 }
