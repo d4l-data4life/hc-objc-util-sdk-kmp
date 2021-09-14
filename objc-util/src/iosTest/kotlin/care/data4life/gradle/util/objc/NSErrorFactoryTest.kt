@@ -16,7 +16,7 @@
 
 package care.data4life.gradle.util.objc
 
-import co.touchlab.stately.isFrozen
+import kotlin.native.concurrent.isFrozen
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertSame

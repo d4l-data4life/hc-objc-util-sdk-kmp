@@ -19,20 +19,12 @@ object Version {
 
     object GradlePlugin {
         const val kotlin = Version.kotlin
-        const val android = "4.2.2"
+        const val android = "7.0.2"
     }
 
     // Kotlin
-    // https://github.com/JetBrains/kotlin
-    const val kotlin = "1.4.32"
-
-    // https://github.com/Kotlin/kotlinx.coroutines
-    const val kotlinCoroutines = "1.4.3-native-mt"
-
-    // https://github.com/touchlab/Stately
-    const val stately = "1.1.6"
-
-    // Network
-    // https://ktor.io/
-    const val ktor = "1.5.4"
+    /**
+     * https://github.com/JetBrains/kotlin
+     **/
+    const val kotlin = "1.5.21"
 }
