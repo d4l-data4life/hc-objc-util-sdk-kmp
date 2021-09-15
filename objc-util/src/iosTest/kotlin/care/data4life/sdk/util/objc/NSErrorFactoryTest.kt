@@ -16,7 +16,6 @@
 
 package care.data4life.sdk.util.objc
 
-import care.data4life.sdk.util.objc.NSErrorFactory
 import co.touchlab.stately.isFrozen
 import kotlin.test.Test
 import kotlin.test.assertEquals
