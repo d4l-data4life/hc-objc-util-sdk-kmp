@@ -16,6 +16,7 @@
 
 package care.data4life.gradle.util.objc
 
+import care.data4life.sdk.util.objc.NSDataMapper
 import kotlinx.cinterop.memScoped
 import platform.Foundation.NSData
 import platform.Foundation.create
