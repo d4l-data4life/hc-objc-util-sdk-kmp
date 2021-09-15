@@ -14,8 +14,9 @@
  * contact D4L by email to help@data4life.care.
  */
 
-package care.data4life.gradle.util.objc
+package care.data4life.sdk.util.objc
 
+import care.data4life.sdk.util.objc.NSErrorFactory
 import co.touchlab.stately.isFrozen
 import kotlin.test.Test
 import kotlin.test.assertEquals
