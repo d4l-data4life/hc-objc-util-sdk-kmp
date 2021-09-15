@@ -16,7 +16,6 @@
 
 package care.data4life.sdk.util.objc
 
-import care.data4life.sdk.util.objc.NSErrorFactory
 import kotlin.native.concurrent.isFrozen
 import kotlin.test.Test
 import kotlin.test.assertEquals
