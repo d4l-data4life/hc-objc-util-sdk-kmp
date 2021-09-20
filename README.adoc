@@ -1,6 +1,6 @@
 = Data4Life Obj-C Util SDK
 :link-repository: https://github.com/d4l-data4life/hc-objc-util-sdk-kmp
-:objc-util-sdk-version: 0.1.0
+:objc-util-sdk-version: 0.2.0
 :doctype: article
 :!showtitle:
 :toc: macro
