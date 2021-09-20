@@ -14,13 +14,13 @@
  * contact D4L by email to help@data4life.care.
  */
 plugins {
-    id("care.data4life.sdk.util.objc.dependency")
+    id("care.data4life.gradle.util.objc.dependency")
 
-    id("care.data4life.sdk.util.objc.dependency-updates")
-    id("care.data4life.sdk.util.objc.download-scripts")
-    id("care.data4life.sdk.util.objc.publishing")
-    id("care.data4life.sdk.util.objc.quality-spotless")
-    id("care.data4life.sdk.util.objc.versioning")
+    id("care.data4life.gradle.util.objc.script.dependency-updates")
+    id("care.data4life.gradle.util.objc.script.download-scripts")
+    id("care.data4life.gradle.util.objc.script.publishing")
+    id("care.data4life.gradle.util.objc.script.quality-spotless")
+    id("care.data4life.gradle.util.objc.script.versioning")
 }
 
 allprojects {

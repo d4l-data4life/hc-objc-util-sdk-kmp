@@ -13,15 +13,15 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
-import care.data4life.sdk.util.objc.LibraryConfig
-import care.data4life.sdk.util.objc.dependency.Dependency
 
+import care.data4life.gradle.util.objc.config.LibraryConfig
+import care.data4life.gradle.util.objc.dependency.Dependency
 
 plugins {
     id("org.jetbrains.kotlin.multiplatform")
 
     // Publish
-    id("care.data4life.sdk.util.objc.publishing-config")
+    id("care.data4life.gradle.util.objc.script.publishing-config")
 }
 
 group = LibraryConfig.group

@@ -13,26 +13,15 @@
  * applications and/or if you’d like to contribute to the development of the SDK, please
  * contact D4L by email to help@data4life.care.
  */
-package care.data4life.sdk.util.objc.dependency
 
-object Version {
+package care.data4life.gradle.util.objc.dependency
 
-    object GradlePlugin {
-        const val kotlin = Version.kotlin
-        const val android = "4.2.2"
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+
+class DependencyPlugin : Plugin<Project> {
+
+    override fun apply(target: Project) {
+        // nothing to do
     }
-
-    // Kotlin
-    // https://github.com/JetBrains/kotlin
-    const val kotlin = "1.4.32"
-
-    // https://github.com/Kotlin/kotlinx.coroutines
-    const val kotlinCoroutines = "1.4.3-native-mt"
-
-    // https://github.com/touchlab/Stately
-    const val stately = "1.1.6"
-
-    // Network
-    // https://ktor.io/
-    const val ktor = "1.5.4"
 }
