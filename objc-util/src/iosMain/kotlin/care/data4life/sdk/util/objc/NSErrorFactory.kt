@@ -16,10 +16,10 @@
 
 package care.data4life.sdk.util.objc
 
-import co.touchlab.stately.freeze
 import platform.Foundation.NSError
 import platform.Foundation.NSErrorUserInfoKey
 import platform.Foundation.NSLocalizedDescriptionKey
+import kotlin.native.concurrent.freeze
 
 object NSErrorFactory {
     fun create(

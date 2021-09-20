@@ -18,12 +18,12 @@ pluginManagement {
         gradlePluginPortal()
         google()
     }
-
-    includeBuild("gradlePlugin/objc-util-dependency")
 }
 
+includeBuild("gradlePlugin/objc-util-dependency")
+
 plugins {
-    id("com.gradle.enterprise") version("3.4.1")
+    id("com.gradle.enterprise") version("3.7")
 }
 
 include(
